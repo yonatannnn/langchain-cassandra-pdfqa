@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document QA Tester</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Document QA Tester</h1>
+
+    <section class="card">
+      <h2>Device</h2>
+      <div class="row">
+        <label for="deviceId">Device ID</label>
+        <input id="deviceId" type="text" placeholder="e.g., test-device-1" />
+        <button id="saveDevice">Save</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Upload PDF</h2>
+      <form id="uploadForm">
+        <input type="file" id="fileInput" accept="application/pdf" />
+        <button type="submit">Upload</button>
+      </form>
+      <div id="uploadStatus" class="status"></div>
+    </section>
+
+    <section class="card">
+      <h2>Documents</h2>
+      <div class="row">
+        <button id="refreshDocs">Refresh</button>
+      </div>
+      <ul id="docList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Ask a Question</h2>
+      <div class="row">
+        <label for="docSelect">Document (optional)</label>
+        <select id="docSelect">
+          <option value="">All documents</option>
+        </select>
+      </div>
+      <div class="row">
+        <input id="questionInput" type="text" placeholder="Type your question" />
+        <button id="askBtn">Ask</button>
+      </div>
+      <div id="answer" class="answer"></div>
+      <div id="sources" class="sources"></div>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
