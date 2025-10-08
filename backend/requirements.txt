@@ -1,0 +1,16 @@
+flask
+flask-cors
+python-dotenv
+pydantic
+pydantic-settings
+werkzeug
+langchain
+langchain-community
+langchain-openai
+langchain-text-splitters
+openai
+cassio
+cassandra-driver
+pymongo
+pypdf
+tiktoken
